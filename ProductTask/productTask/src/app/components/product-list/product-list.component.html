@@ -1,0 +1,8 @@
+<div class="products">
+  <div *ngFor="let product of products" class="product-card">
+    <h3>{{ product.name }}</h3>
+    <img [src]="product.images.yellow" alt="{{ product.name }}" width="200" />
+    <p>Price: ${{ product.price.toFixed(2) }}</p>
+    <p>Popularity: {{ (product.popularityScore * 5).toFixed(1) }}/5</p>
+  </div>
+</div>

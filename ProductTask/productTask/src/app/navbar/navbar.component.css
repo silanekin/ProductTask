@@ -1,0 +1,49 @@
+.navbar {
+  background-color: #0d1b2a;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(13,27,42,0.8);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  cursor: default;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #fca311;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Basit tutuyoruz, istersen hamburger yapabiliriz */
+  }
+}
